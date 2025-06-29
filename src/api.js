@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Update to deployed URL later
+  baseURL: 'https://evochargermapbackend.vercel.app/api', // Update to deployed URL later
 });
 
 api.interceptors.request.use(config => {

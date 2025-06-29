@@ -28,7 +28,7 @@ async fetchChargingStations() {
   try {
     const token = localStorage.getItem('token'); // Ensure the token is stored in localStorage after login
 
-    const response = await axios.get('http://localhost:5000/api/stations', {
+    const response = await axios.get('hhttps://evochargermapbackend.vercel.app/api/stations', {
       headers: {
         Authorization: `Bearer ${token}`
       }

@@ -298,7 +298,7 @@ const fetchStations = async (): Promise<void> => {
     loading.value = true;
     console.log('Fetching charging stations...');
     const token = localStorage.getItem('token');
-    const response = await axios.get('http://localhost:5000/api/stations', {
+    const response = await axios.get('https://evochargermapbackend.vercel.app/api/stations', {
       headers: { Authorization: `Bearer ${token}` },
     });
 
