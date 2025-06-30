@@ -149,4 +149,4 @@ The open-source community for continuous inspiration and support.
 
 
 Happy Charging! ⚡️
-For questions or support, contact [your-email@example.com] or open an issue on GitHub.
+For questions or support, contact wachannarkhede4@gmail.com or open an issue on GitHub.
