@@ -1,3 +1,19 @@
+ev-charging-frontend/
+├── public/                 # Static assets
+├── src/                    # Source code
+│   ├── api/                # Axios API client
+│   ├── assets/             # Images, fonts, etc.
+│   ├── components/         # Vue components
+│   ├── router/             # Vue Router configuration
+│   ├── store/              # Pinia store
+│   ├── views/              # Page components (e.g., Dashboard, Map)
+│   └── App.vue             # Root Vue component
+├── .env                    # Environment variables
+├── package.json            # Project metadata and dependencies
+├── vite.config.js          # Vite configuration
+└── README.md               # This file
+
+
 # ev-charging-frontend
 
 This template should help get you started developing with Vue 3 in Vite.
