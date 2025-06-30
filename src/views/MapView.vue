@@ -579,7 +579,7 @@ onMounted(async (): Promise<void> => {
   border-radius: 8px;
   font-size: 14px;
   transition: all 0.3s ease;
-  min-width: 80px;
+  min-width: 120px;
 }
 
 .filter-select:focus, .filter-input:focus {
