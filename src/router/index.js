@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Dashboard from '../views/Dashboard.vue'; // Changed from ./ to ../
+import Dashboard from '../views/Dashboard.vue'; 
 import MapView from '../views/MapView.vue';     
 import Login from '../views/Login.vue';    
-import Signup from '../views/Signup.vue';     
+import Signup from '../views/Signup.vue';  
+import Landing from '../views/Landing.vue'; 
 
 const routes = [
-  { path: '/', redirect: '/login' },
+  { path: '/', redirect: '/landing' },
+  { path: '/landing', component: Landing }, 
   { path: '/login', component: Login },
   { path: '/signup', component: Signup },
   { path: '/dashboard', component: Dashboard, meta: { requiresAuth: true } },
@@ -27,3 +29,4 @@ router.beforeEach((to, from, next) => {
 });
 
 export default router;
+

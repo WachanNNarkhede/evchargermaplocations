@@ -1,7 +1,7 @@
-```vue
+
 <template>
   <div class="app-container">
-    <nav v-if="$route.path !== '/login'" class="navbar transform -translate-y-1">
+    <nav v-if="shouldShowNavbar" class="navbar transform -translate-y-1">
       <div class="mx-4 sm:mx-6 lg:mx-8 px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <!-- Logo Section -->
         <div class="flex items-center gap-3 animate-slide-in-left">
@@ -53,14 +53,21 @@
 
 <script>
 export default {
+  computed: {
+    shouldShowNavbar() {
+      const publicRoutes = ['/login', '/signup', '/landing'];
+      return !publicRoutes.includes(this.$route.path);
+    }
+  },
   methods: {
     logout() {
       localStorage.removeItem('token');
-      this.$router.push('/login');
+      this.$router.push('/landing'); // Redirect to landing instead of login
     },
   },
 };
 </script>
+
 
 <style scoped>
 /* Animations */
@@ -266,4 +273,3 @@ export default {
   }
 }
 </style>
-```
